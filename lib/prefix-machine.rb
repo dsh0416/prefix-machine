@@ -9,13 +9,15 @@ class PrefixMachine
   end
 
   def insert(rule)
-    guard!(rule)
-    trie_insert(rule)
+    s = rule.downcase
+    guard!(s)
+    trie_insert(s)
   end
 
   def match(str)
-    guard!(str)
-    trie_match(str)
+    s = str.downcase
+    guard!(s)
+    trie_match(s)
   end
 
   alias_method :<<, :insert
