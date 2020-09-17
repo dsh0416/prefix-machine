@@ -13,5 +13,6 @@ class PrefixMachineTest < Minitest::Test
     assert_equal 'hello.', machine.match('hello.world')
     assert_equal 'fork.ai.', machine.match('fork.ai.sdk')
     assert_equal 'fork.human.', machine.match('fork.human.resources')
+    assert_nil machine.match('refute')
   end
 end

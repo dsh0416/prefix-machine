@@ -11,4 +11,5 @@ machine << 'fork.human.'
 machine.match('hello.world') # => 'hello.'
 machine.match('fork.ai.sdk') # => 'fork.ai.'
 machine.match('fork.human.resources') # => 'fork.human.'
+machine.match('refute') # => nil
 ```
