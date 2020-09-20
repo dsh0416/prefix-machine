@@ -1,5 +1,5 @@
 require 'prefix_machine_ext'
-require './prefix-machine/version'
+require_relative 'prefix-machine/version'
 
 class PrefixMachine
   attr_reader :count
